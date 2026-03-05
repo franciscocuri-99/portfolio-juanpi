@@ -3,22 +3,24 @@
 @theme {
     --font-sans: 'Outfit', sans-serif;
 
-    --color-brand-50: #eff6ff;
-    --color-brand-100: #dbeafe;
-    --color-brand-200: #bfdbfe;
-    --color-brand-300: #93c5fd;
-    --color-brand-400: #60a5fa;
-    --color-brand-500: #3b82f6;
-    /* Main Blue */
-    --color-brand-600: #2563eb;
-    --color-brand-700: #1d4ed8;
-    --color-brand-800: #1e40af;
-    --color-brand-900: #1e3a8a;
-    --color-brand-950: #172554;
+    --color-brand-50: #eef2ff;
+    --color-brand-100: #dce5fe;
+    --color-brand-200: #bccbfd;
+    --color-brand-300: #8ba5fb;
+    --color-brand-400: #5b7ef7;
+    --color-brand-500: #3061F2;
+    /* Main Blue - Paleta definitiva */
+    --color-brand-600: #2450d0;
+    --color-brand-700: #1c3faa;
+    --color-brand-800: #1a3688;
+    --color-brand-900: #111D40;
+    /* Navy oscuro - Paleta definitiva */
+    --color-brand-950: #0A1426;
+    /* Fondo profundo - Paleta definitiva */
 
-    --color-dark-900: #09090b;
-    --color-dark-800: #18181b;
-    --color-dark-700: #27272a;
+    --color-dark-900: #0A1426;
+    --color-dark-800: #111D40;
+    --color-dark-700: #262626;
 
     --animate-fade-in: fadeIn 0.5s ease-out forwards;
     --animate-slide-up: slideUp 0.5s ease-out forwards;
@@ -93,15 +95,15 @@
 
     @keyframes glowPulse {
         0% {
-            box-shadow: 0 0 10px 2px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 0 10px 2px rgba(48, 97, 242, 0.4);
         }
 
         50% {
-            box-shadow: 0 0 25px 6px rgba(59, 130, 246, 0.7);
+            box-shadow: 0 0 25px 6px rgba(48, 97, 242, 0.7);
         }
 
         100% {
-            box-shadow: 0 0 10px 2px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 0 10px 2px rgba(48, 97, 242, 0.4);
         }
     }
 }
@@ -114,18 +116,18 @@
 
 @layer components {
     .glass-nav {
-        background: rgba(9, 9, 11, 0.7);
+        background: rgba(10, 20, 38, 0.7);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
     }
 
     .hero-glow {
-        background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, rgba(9, 9, 11, 0) 70%);
+        background: radial-gradient(circle at center, rgba(48, 97, 242, 0.15) 0%, rgba(10, 20, 38, 0) 70%);
     }
 
     .card-hover:hover {
         transform: translateY(-5px);
-        box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.1);
+        box-shadow: 0 20px 40px -10px rgba(48, 97, 242, 0.1);
     }
 
     .reveal-on-scroll {
