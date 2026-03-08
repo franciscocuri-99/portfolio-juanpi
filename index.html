@@ -835,130 +835,188 @@
 
 
 
-        <!-- Resultados Reales Section -->
-        <section id="resultados-reales" class="py-24 relative overflow-hidden">
+        <!-- Resultados Reales Section (3D Carousel) -->
+        <section id="resultados" class="py-24 relative overflow-hidden">
             <!-- Background glow layer for depth -->
             <div
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-brand-500/5 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen">
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
                 <div class="text-center mb-16 reveal-on-scroll">
                     <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-brand-600">Casos
-                            de
-                            Éxito</span>
+                            de Éxito</span>
                     </h2>
                     <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto">
-                        Clientes reales, resultados reales. Santi Arias de 200 a 18K seguidores. Dra. Baeza con +390
-                        consultas. $5.250 USD en 30 días con Luciano Perri.
+                        Resultados reales del contenido. Haz clic en las tarjetas interactivas para ver el "antes" y el
+                        "después".
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full px-6 md:px-0 max-w-5xl mx-auto">
-                    <!-- Santi Arias -->
-                    <article
-                        class="bg-zinc-900 border border-white/5 hover:border-brand-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(48,97,242,0.15)] group relative overflow-hidden flex flex-col items-center text-center">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                        <div class="relative z-10 flex flex-col h-full items-center w-full">
-                            <img src="img/perfiles_ig/santi_arias.png" alt="Santi Arias"
-                                class="w-20 h-20 rounded-full object-cover border-2 border-brand-500/30 mb-4 shadow-lg">
-                            <h3 class="text-xl font-bold text-white leading-tight">Santi Arias</h3>
-                            <p class="text-brand-400 text-sm mb-6">Coach de Deporte</p>
+                <!-- 3D Carousel Container -->
+                <div class="swiper casos-swiper w-full pt-10 pb-20 reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="swiper-wrapper flex items-center">
 
-                            <div class="space-y-4 mb-6 flex-grow w-full flex flex-col justify-center">
-                                <div class="bg-black/30 rounded-xl p-4 border border-white/5">
-                                    <p class="text-zinc-300 text-sm mb-1"><strong
-                                            class="text-white text-lg">+11k</strong> en IG</p>
-                                    <div class="h-px w-full bg-white/5 my-2"></div>
-                                    <p class="text-zinc-300 text-sm"><strong class="text-white text-lg">+72k</strong> en
-                                        TikTok</p>
+                        <!-- Flip Card: Santi Arias Seguidores -->
+                        <div class="swiper-slide casos-slide">
+                            <div class="flip-card cursor-pointer w-full casos-aspect perspective-1000">
+                                <div
+                                    class="flip-card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+                                    <div
+                                        class="flip-card-front absolute inset-0 backface-hidden rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10">
+                                        </div>
+                                        <img src="img/CASOS DE ÉXITO/recortados/santi arias seguidores antes corto.jpg"
+                                            alt="Santi Arias Antes" class="w-full h-full object-cover">
+                                        <div
+                                            class="absolute bottom-6 left-6 right-6 z-20 flex justify-between items-end">
+                                            <div>
+                                                <h3 class="text-xl font-bold text-white mb-1 drop-shadow-md">Crecimiento
+                                                    (Antes)</h3>
+                                                <p class="text-brand-400 text-sm font-semibold">Santi Arias</p>
+                                            </div>
+                                            <div class="bg-white/10 backdrop-blur-md rounded-full p-2 animate-pulse flex items-center justify-center"
+                                                aria-label="Haz click para voltear">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path
+                                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flip-card-back absolute inset-0 backface-hidden rounded-2xl overflow-hidden border border-brand-500/50 shadow-[0_0_40px_rgba(48,97,242,0.3)] bg-zinc-900 rotate-y-180">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-900/90 z-10 mix-blend-multiply">
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10">
+                                        </div>
+                                        <img src="img/CASOS DE ÉXITO/recortados/santi arias seguidores desp corto.jpg"
+                                            alt="Santi Arias Después" class="w-full h-full object-cover opacity-90">
+                                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                                            <h3 class="text-2xl font-bold text-white mb-1 drop-shadow-lg">Crecimiento
+                                                (Después)</h3>
+                                            <p class="text-brand-300 text-sm mb-3">Santi Arias</p>
+                                            <div
+                                                class="inline-block bg-brand-500 text-white text-xs px-3 py-1 rounded-full font-bold shadow-lg">
+                                                Logro Desbloqueado</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="text-zinc-400 text-xs italic">+3.000 conversaciones generadas con 1 solo video
-                                    estratégico</p>
-                            </div>
-
-                            <div class="w-full flex gap-3 mt-auto">
-                                <a href="https://www.instagram.com/santiariascoach_/" target="_blank"
-                                    class="flex-1 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] py-2.5 rounded-xl text-xs font-bold text-white hover:opacity-90 transition-opacity shadow-md flex items-center justify-center gap-1.5">
-                                    Instagram
-                                </a>
                             </div>
                         </div>
-                    </article>
 
-                    <!-- Dra. Baeza -->
-                    <article
-                        class="bg-zinc-900 border border-white/5 hover:border-brand-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(48,97,242,0.15)] group relative overflow-hidden flex flex-col items-center text-center">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                        <div class="relative z-10 flex flex-col h-full items-center w-full">
-                            <img src="img/perfiles_ig/dra_baeza.png" alt="Dra. Baeza"
-                                class="w-20 h-20 rounded-full object-cover border-2 border-brand-500/30 mb-4 shadow-lg">
-                            <h3 class="text-xl font-bold text-white leading-tight">Dra. Baeza</h3>
-                            <p class="text-brand-400 text-sm mb-6">Profesional de la Salud</p>
-
-                            <div class="space-y-4 mb-6 flex-grow w-full flex flex-col justify-center">
-                                <div class="bg-brand-500/10 rounded-xl p-4 border border-brand-500/20">
-                                    <p class="text-white text-sm font-semibold mb-1">Posicionamiento</p>
-                                    <p class="text-zinc-300 text-sm">Construcción de <span
-                                            class="text-brand-300">autoridad</span></p>
+                        <!-- Flip Card: Santi Arias Comentarios -->
+                        <div class="swiper-slide casos-slide">
+                            <div class="flip-card cursor-pointer w-full casos-aspect perspective-1000">
+                                <div
+                                    class="flip-card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+                                    <div
+                                        class="flip-card-front absolute inset-0 backface-hidden rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10">
+                                        </div>
+                                        <img src="img/CASOS DE ÉXITO/recortados/santi arias vistas tiktok corto.jpg"
+                                            alt="Santi Arias TikTok" class="w-full h-full object-contain bg-zinc-800">
+                                        <div
+                                            class="absolute bottom-6 left-6 right-6 z-20 flex justify-between items-end">
+                                            <div>
+                                                <h3 class="text-xl font-bold text-white mb-1 drop-shadow-md">Comunidad
+                                                    TikTok</h3>
+                                                <p class="text-brand-400 text-sm font-semibold">Santi Arias</p>
+                                            </div>
+                                            <div
+                                                class="bg-white/10 backdrop-blur-md rounded-full p-2 animate-pulse flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path
+                                                        d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 002-2v-4M17 8l-5-5-5 5M12 3v12" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flip-card-back absolute inset-0 backface-hidden rounded-2xl overflow-hidden border border-brand-500/50 shadow-[0_0_40px_rgba(48,97,242,0.3)] bg-zinc-900 rotate-y-180">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-900/80 z-10 mix-blend-multiply">
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10">
+                                        </div>
+                                        <img src="img/CASOS DE ÉXITO/recortados/santi arias vistas instagram corto.jpg"
+                                            alt="Santi Arias Instagram"
+                                            class="w-full h-full object-contain bg-zinc-800 opacity-90">
+                                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                                            <h3 class="text-2xl font-bold text-white mb-1 drop-shadow-lg">Comunidad
+                                                Instagram</h3>
+                                            <p class="text-brand-300 text-sm mb-3">Santi Arias</p>
+                                            <div
+                                                class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs px-3 py-1 rounded-full font-bold shadow-lg">
+                                                Interacción</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="text-zinc-400 text-sm leading-relaxed">
-                                    Generación de pacientes de forma directa en Instagram mediante una estrategia de
-                                    contenido puramente orgánica, sin depender de anuncios.
-                                </p>
                             </div>
                         </div>
-                    </article>
 
-                    <!-- Luciano Perri -->
-                    <article
-                        class="bg-zinc-900 border border-white/5 hover:border-brand-500/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(48,97,242,0.15)] group relative overflow-hidden flex flex-col items-center text-center">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                        </div>
-                        <div class="relative z-10 flex flex-col h-full items-center w-full">
-                            <img src="img/perfiles_ig/luciano_perri.png" alt="Luciano Perri"
-                                class="w-20 h-20 rounded-full object-cover border-2 border-brand-500/30 mb-4 shadow-lg">
-                            <h3 class="text-xl font-bold text-white leading-tight">Luciano Perri</h3>
-                            <p class="text-brand-400 text-sm mb-6">Coach Experto</p>
-
-                            <div class="space-y-4 mb-6 flex-grow w-full flex flex-col justify-center">
-                                <div class="bg-emerald-500/10 rounded-xl p-4 border border-emerald-500/20">
-                                    <p class="text-emerald-300 text-sm font-semibold mb-1">Aceleración y Ventas</p>
-                                    <p class="text-white text-sm">Agendamiento Activo</p>
+                        <!-- Single Card: Coral Vistas -->
+                        <div class="swiper-slide casos-slide">
+                            <div
+                                class="w-full casos-aspect rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
                                 </div>
-                                <p class="text-zinc-400 text-sm leading-relaxed">
-                                    Integración total en el proceso comercial, asumiendo contacto directo y logrando
-                                    agendar <strong class="text-white">5 llamadas diarias</strong> con prospectos
-                                    calificados.
-                                </p>
+                                <img src="img/CASOS DE ÉXITO/coral vistas.jpg" alt="Coral Vistas"
+                                    class="w-full h-full object-cover">
+                                <div class="absolute bottom-6 left-6 right-6 z-20 pointer-events-none">
+                                    <h3 class="text-xl font-bold text-white mb-1 drop-shadow-md">Impacto Masivo</h3>
+                                    <p class="text-brand-400 text-sm font-semibold">Coral Mujaes</p>
+                                </div>
                             </div>
                         </div>
-                    </article>
-                </div>
 
-                <!-- Coral Mujaes Extra section -->
-                <div
-                    class="mt-8 mb-4 max-w-4xl mx-auto flex items-center justify-center pt-8 border-t border-white/5 reveal-on-scroll">
-                    <div
-                        class="flex items-center gap-6 p-4 rounded-xl border border-white/5 bg-zinc-900 hover:border-brand-500/30 transition-colors w-full sm:w-auto">
-                        <img src="img/perfiles_ig/coral.png" alt="Coral Mujaes"
-                            class="w-12 h-12 rounded-full object-cover">
-                        <div>
-                            <p class="text-sm text-zinc-400 mb-1">Manejo de viralidad</p>
-                            <p class="text-white font-semibold">Caso de éxito: <span class="text-brand-400">Coral
-                                    Mujaes</span></p>
+                        <!-- Single Card: Soto Vistas -->
+                        <div class="swiper-slide casos-slide">
+                            <div
+                                class="w-full casos-aspect rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
+                                </div>
+                                <img src="img/CASOS DE ÉXITO/soto vistas.jpg" alt="Soto Vistas"
+                                    class="w-full h-full object-cover">
+                                <div class="absolute bottom-6 left-6 right-6 z-20 pointer-events-none">
+                                    <h3 class="text-xl font-bold text-white mb-1 drop-shadow-md">Alcance y Retención
+                                    </h3>
+                                    <p class="text-brand-400 text-sm font-semibold">Dr. Alfonso Ruiz Soto</p>
+                                </div>
+                            </div>
                         </div>
-                        <a href="https://www.tiktok.com/@coralmujaes_/video/7544426097119694096" target="_blank"
-                            class="ml-auto bg-brand-600 hover:bg-brand-500 text-white text-xs px-4 py-2 rounded-full font-semibold transition-colors flex items-center gap-2 shadow-lg shadow-brand-500/20">
-                            Ver video viral
-                        </a>
+
+                        <!-- Single Card: Santi Vistas -->
+                        <div class="swiper-slide casos-slide">
+                            <div
+                                class="w-full casos-aspect rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
+                                </div>
+                                <img src="img/CASOS DE ÉXITO/santi vistas.jpg" alt="Santi Vistas"
+                                    class="w-full h-full object-cover">
+                                <div class="absolute bottom-6 left-6 right-6 z-20 pointer-events-none">
+                                    <h3 class="text-xl font-bold text-white mb-1 drop-shadow-md">Viralidad Orgánica</h3>
+                                    <p class="text-brand-400 text-sm font-semibold">Santi Arias</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    <!-- Swiper Pagination -->
+                    <div class="swiper-pagination casos-pagination !bottom-0 pt-8"></div>
                 </div>
 
                 <div class="mt-8 text-center reveal-on-scroll">
@@ -973,6 +1031,78 @@
                     </a>
                 </div>
             </div>
+
+            <!-- CSS para Flip Cards -->
+            <style>
+                .perspective-1000 {
+                    perspective: 1000px;
+                }
+
+                .preserve-3d {
+                    transform-style: preserve-3d;
+                }
+
+                .backface-hidden {
+                    /* backface-visibility removed to fix Safari/3D Swiper Coverflow glitch */
+                }
+
+                .flip-card-front {
+                    z-index: 2;
+                    transition: opacity 0.4s ease;
+                }
+
+                .rotate-y-180 {
+                    transform: rotateY(180deg);
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                    z-index: 1;
+                }
+
+                .is-flipped .flip-card-front {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+
+                .is-flipped .rotate-y-180 {
+                    opacity: 1;
+                    z-index: 3;
+                }
+
+                .is-flipped .flip-card-inner {
+                    transform: rotateY(180deg);
+                }
+
+                .casos-swiper {
+                    overflow: visible !important;
+                    padding-top: 2rem !important;
+                    padding-bottom: 4rem !important;
+                }
+
+                .casos-swiper .swiper-slide {
+                    width: 360px !important;
+                    height: 450px !important;
+                    transition: transform 0.5s ease, opacity 0.5s ease;
+                }
+
+                @media (max-width: 768px) {
+                    .casos-swiper .swiper-slide {
+                        width: 300px !important;
+                        height: 375px !important;
+                    }
+                }
+
+                .casos-pagination .swiper-pagination-bullet {
+                    background: rgba(255, 255, 255, 0.4);
+                    opacity: 1;
+                    transition: background-color 0.3s, transform 0.3s;
+                }
+
+                .casos-pagination .swiper-pagination-bullet-active {
+                    background: var(--color-brand-500, #3061F2);
+                    box-shadow: 0 0 10px rgba(48, 97, 242, 0.6);
+                    transform: scale(1.2);
+                }
+            </style>
         </section>
 
     </main>
@@ -1411,6 +1541,48 @@
         })();
 
 
+        /* ========================================= */
+        /*  Casos de Éxito 3D Swiper                 */
+        /* ========================================= */
+        const casosSwiper = new Swiper('.casos-swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            coverflowEffect: {
+                rotate: 20,       // Slide rotate in degrees
+                stretch: 0,       // Stretch space between slides (in px)
+                depth: 350,       // Depth offset in px (z-axis)
+                modifier: 1,      // Effect multiplier
+                slideShadows: true, // Enables slides shadows
+            },
+            pagination: {
+                el: '.casos-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            }
+        });
+
+        // Flip Card Logic
+        const flipCards = document.querySelectorAll('.flip-card');
+        flipCards.forEach(card => {
+            card.addEventListener('click', function (e) {
+                // Toggle the flipped state
+                this.classList.toggle('is-flipped');
+            });
+        });
+
+        // Reset flipped cards when swiper slides to prevent messed up states
+        casosSwiper.on('slideChangeTransitionStart', function () {
+            document.querySelectorAll('.flip-card.is-flipped').forEach(card => {
+                card.classList.remove('is-flipped');
+            });
+        });
     </script>
 
 </body>
