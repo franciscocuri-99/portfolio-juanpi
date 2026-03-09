@@ -138,7 +138,7 @@
 
                 <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto reveal-on-scroll"
                     style="transition-delay: 0.4s;">
-                    <a href="#resultados"
+                    <a href="#casos-exito"
                         class="group bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg shadow-brand-600/20 hover:shadow-brand-500/40 flex items-center justify-center gap-2">
                         Ver Casos de Éxito
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -836,7 +836,7 @@
 
 
         <!-- Resultados Reales Section (3D Carousel) -->
-        <section id="resultados" class="py-24 relative overflow-hidden">
+        <section id="casos-exito" class="py-24 relative overflow-hidden">
             <!-- Background glow layer for depth -->
             <div
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-brand-500/5 rounded-full blur-[120px] pointer-events-none -z-10 mix-blend-screen">
@@ -860,7 +860,7 @@
 
                         <!-- Flip Card: Santi Arias Seguidores -->
                         <div class="swiper-slide casos-slide">
-                            <div class="flip-card cursor-pointer w-full casos-aspect perspective-1000">
+                            <div class="flip-card cursor-pointer w-full h-full perspective-1000">
                                 <div
                                     class="flip-card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
                                     <div
@@ -913,7 +913,7 @@
 
                         <!-- Flip Card: Santi Arias Comentarios -->
                         <div class="swiper-slide casos-slide">
-                            <div class="flip-card cursor-pointer w-full casos-aspect perspective-1000">
+                            <div class="flip-card cursor-pointer w-full h-full perspective-1000">
                                 <div
                                     class="flip-card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
                                     <div
@@ -968,7 +968,7 @@
                         <!-- Single Card: Coral Vistas -->
                         <div class="swiper-slide casos-slide">
                             <div
-                                class="w-full casos-aspect rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
+                                class="w-full h-full rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
                                 </div>
@@ -984,7 +984,7 @@
                         <!-- Single Card: Soto Vistas -->
                         <div class="swiper-slide casos-slide">
                             <div
-                                class="w-full casos-aspect rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
+                                class="w-full h-full rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
                                 </div>
@@ -1001,7 +1001,7 @@
                         <!-- Single Card: Santi Vistas -->
                         <div class="swiper-slide casos-slide">
                             <div
-                                class="w-full casos-aspect rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
+                                class="w-full h-full rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl hover:border-brand-500/40 transition-colors duration-300">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
                                 </div>
@@ -1042,9 +1042,7 @@
                     transform-style: preserve-3d;
                 }
 
-                .backface-hidden {
-                    /* backface-visibility removed to fix Safari/3D Swiper Coverflow glitch */
-                }
+
 
                 .flip-card-front {
                     z-index: 2;
